@@ -25,6 +25,10 @@ app.use('/', (req, res) => {
     });
 });
 
+app.listen(process.env.PORT || 8080, () => {
+    console.log(`Server is running on the ${process.env.PORT}`)
+})
+
 // app.use('/api/users', errorHandler);
 
 
